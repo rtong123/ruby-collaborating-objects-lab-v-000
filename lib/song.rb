@@ -14,6 +14,7 @@ attr_accessor :name, :artist
     artist = Artist.find_or_create_by_name(new_title[0])
     #a= Artist.new('Prince')
     #a.nam
+    artist.add_song(song)
     song.artist = artist
     return song
   end
